@@ -104,5 +104,10 @@ namespace BookLibrary
         {
             ShowGridPreview(registriAllGridControl);
         }
+
+        private void dataNavigator1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

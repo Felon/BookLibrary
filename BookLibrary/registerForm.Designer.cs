@@ -78,8 +78,12 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.registriAllBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.searchControl1 = new DevExpress.XtraEditors.SearchControl();
+            this.repositoryItemResourcesComboBox1 = new DevExpress.XtraScheduler.UI.RepositoryItemResourcesComboBox();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookLibraryDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.registryBindingSource)).BeginInit();
@@ -90,6 +94,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.registriAllBindingNavigator)).BeginInit();
             this.registriAllBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -102,7 +109,8 @@
             this.помощьToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1902, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1426, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -111,13 +119,13 @@
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.выходToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
@@ -128,26 +136,26 @@
             this.книгиToolStripMenuItem,
             this.читателиToolStripMenuItem});
             this.отчетыToolStripMenuItem.Name = "отчетыToolStripMenuItem";
-            this.отчетыToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+            this.отчетыToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.отчетыToolStripMenuItem.Text = "Отчеты";
             // 
             // задолжникиToolStripMenuItem
             // 
             this.задолжникиToolStripMenuItem.Name = "задолжникиToolStripMenuItem";
-            this.задолжникиToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
+            this.задолжникиToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.задолжникиToolStripMenuItem.Text = "Задолжники";
             this.задолжникиToolStripMenuItem.Click += new System.EventHandler(this.задолжникиToolStripMenuItem_Click);
             // 
             // книгиToolStripMenuItem
             // 
             this.книгиToolStripMenuItem.Name = "книгиToolStripMenuItem";
-            this.книгиToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
+            this.книгиToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.книгиToolStripMenuItem.Text = "Книги";
             // 
             // читателиToolStripMenuItem
             // 
             this.читателиToolStripMenuItem.Name = "читателиToolStripMenuItem";
-            this.читателиToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
+            this.читателиToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.читателиToolStripMenuItem.Text = "Читатели";
             // 
             // справочникиToolStripMenuItem
@@ -157,27 +165,27 @@
             this.книгиToolStripMenuItem1,
             this.книгиИнфоToolStripMenuItem});
             this.справочникиToolStripMenuItem.Name = "справочникиToolStripMenuItem";
-            this.справочникиToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
+            this.справочникиToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.справочникиToolStripMenuItem.Text = "Справочники";
             // 
             // читателиToolStripMenuItem1
             // 
             this.читателиToolStripMenuItem1.Name = "читателиToolStripMenuItem1";
-            this.читателиToolStripMenuItem1.Size = new System.Drawing.Size(170, 26);
+            this.читателиToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
             this.читателиToolStripMenuItem1.Text = "Читатели";
             this.читателиToolStripMenuItem1.Click += new System.EventHandler(this.читателиToolStripMenuItem1_Click);
             // 
             // книгиToolStripMenuItem1
             // 
             this.книгиToolStripMenuItem1.Name = "книгиToolStripMenuItem1";
-            this.книгиToolStripMenuItem1.Size = new System.Drawing.Size(170, 26);
+            this.книгиToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
             this.книгиToolStripMenuItem1.Text = "Книги";
             this.книгиToolStripMenuItem1.Click += new System.EventHandler(this.книгиToolStripMenuItem1_Click);
             // 
             // книгиИнфоToolStripMenuItem
             // 
             this.книгиИнфоToolStripMenuItem.Name = "книгиИнфоToolStripMenuItem";
-            this.книгиИнфоToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
+            this.книгиИнфоToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.книгиИнфоToolStripMenuItem.Text = "Книги инфо.";
             this.книгиИнфоToolStripMenuItem.Click += new System.EventHandler(this.книгиИнфоToolStripMenuItem_Click);
             // 
@@ -188,19 +196,19 @@
             this.справкаToolStripMenuItem});
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
             this.помощьToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.помощьToolStripMenuItem.Text = "Помощь";
             // 
             // оПрограммеToolStripMenuItem
             // 
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
             // 
             // справкаToolStripMenuItem
             // 
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
-            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.справкаToolStripMenuItem.Text = "Справка";
             // 
             // bookLibraryDataSet
@@ -254,13 +262,18 @@
             // registriAllGridControl
             // 
             this.registriAllGridControl.DataSource = this.registriAllBindingSource;
-            this.registriAllGridControl.Location = new System.Drawing.Point(0, 58);
+            this.registriAllGridControl.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
+            this.registriAllGridControl.Location = new System.Drawing.Point(0, 47);
             this.registriAllGridControl.MainView = this.gridView1;
+            this.registriAllGridControl.Margin = new System.Windows.Forms.Padding(2);
             this.registriAllGridControl.Name = "registriAllGridControl";
-            this.registriAllGridControl.Size = new System.Drawing.Size(1902, 450);
+            this.registriAllGridControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemResourcesComboBox1});
+            this.registriAllGridControl.Size = new System.Drawing.Size(1426, 366);
             this.registriAllGridControl.TabIndex = 1;
             this.registriAllGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.gridView1,
+            this.gridView2});
             this.registriAllGridControl.Click += new System.EventHandler(this.registriAllGridControl_Click);
             // 
             // gridView1
@@ -319,6 +332,7 @@
             this.colauthor.AppearanceHeader.Options.UseBackColor = true;
             this.colauthor.AppearanceHeader.Options.UseFont = true;
             this.colauthor.Caption = "Автор";
+            this.colauthor.ColumnEdit = this.repositoryItemResourcesComboBox1;
             this.colauthor.FieldName = "author";
             this.colauthor.MinWidth = 30;
             this.colauthor.Name = "colauthor";
@@ -505,14 +519,14 @@
             this.bindingNavigatorDeleteItem,
             this.registriAllBindingNavigatorSaveItem,
             this.toolStripButton1});
-            this.registriAllBindingNavigator.Location = new System.Drawing.Point(0, 28);
+            this.registriAllBindingNavigator.Location = new System.Drawing.Point(0, 24);
             this.registriAllBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.registriAllBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.registriAllBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.registriAllBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.registriAllBindingNavigator.Name = "registriAllBindingNavigator";
             this.registriAllBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.registriAllBindingNavigator.Size = new System.Drawing.Size(1902, 27);
+            this.registriAllBindingNavigator.Size = new System.Drawing.Size(1426, 27);
             this.registriAllBindingNavigator.TabIndex = 3;
             this.registriAllBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -528,7 +542,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 24);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -569,7 +583,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
@@ -604,7 +618,6 @@
             // registriAllBindingNavigatorSaveItem
             // 
             this.registriAllBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.registriAllBindingNavigatorSaveItem.Enabled = false;
             this.registriAllBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("registriAllBindingNavigatorSaveItem.Image")));
             this.registriAllBindingNavigatorSaveItem.Name = "registriAllBindingNavigatorSaveItem";
             this.registriAllBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
@@ -620,19 +633,54 @@
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
+            // searchControl1
+            // 
+            this.searchControl1.Client = this.registriAllGridControl;
+            this.searchControl1.Location = new System.Drawing.Point(309, 27);
+            this.searchControl1.Name = "searchControl1";
+            this.searchControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Repository.ClearButton(),
+            new DevExpress.XtraEditors.Repository.SearchButton()});
+            this.searchControl1.Properties.Client = this.registriAllGridControl;
+            this.searchControl1.Size = new System.Drawing.Size(214, 20);
+            this.searchControl1.TabIndex = 5;
+            // 
+            // repositoryItemResourcesComboBox1
+            // 
+            this.repositoryItemResourcesComboBox1.AutoHeight = false;
+            this.repositoryItemResourcesComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemResourcesComboBox1.Name = "repositoryItemResourcesComboBox1";
+            // 
+            // gridView2
+            // 
+            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1});
+            this.gridView2.GridControl = this.registriAllGridControl;
+            this.gridView2.Name = "gridView2";
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "gridColumn1";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            // 
             // registerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1902, 515);
+            this.ClientSize = new System.Drawing.Size(1426, 418);
             this.ControlBox = false;
+            this.Controls.Add(this.searchControl1);
             this.Controls.Add(this.registriAllBindingNavigator);
             this.Controls.Add(this.registriAllGridControl);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "registerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Библиотека";
@@ -649,6 +697,9 @@
             this.registriAllBindingNavigator.ResumeLayout(false);
             this.registriAllBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemResourcesComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -706,5 +757,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn colreturn_date;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private DevExpress.XtraEditors.SearchControl searchControl1;
+        private DevExpress.XtraScheduler.UI.RepositoryItemResourcesComboBox repositoryItemResourcesComboBox1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
     }
 }
