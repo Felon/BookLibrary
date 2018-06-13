@@ -30,11 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registerForm));
-            System.Windows.Forms.Label book_idLabel;
-            System.Windows.Forms.Label reader_idLabel;
-            System.Windows.Forms.Label issue_dateLabel;
-            System.Windows.Forms.Label plan_return_dateLabel;
-            System.Windows.Forms.Label return_dateLabel;
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,56 +38,58 @@
             this.книгиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.читателиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.читателиToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.книгиToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.книгиИнфоToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookLibraryDataSet = new BookLibrary.BookLibraryDataSet();
             this.registryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.registryTableAdapter = new BookLibrary.BookLibraryDataSetTableAdapters.registryTableAdapter();
             this.tableAdapterManager = new BookLibrary.BookLibraryDataSetTableAdapters.TableAdapterManager();
-            this.registryBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bookTableAdapter = new BookLibrary.BookLibraryDataSetTableAdapters.bookTableAdapter();
+            this.genreTableAdapter = new BookLibrary.BookLibraryDataSetTableAdapters.genreTableAdapter();
+            this.genreBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.registriAllBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.registriAllTableAdapter = new BookLibrary.BookLibraryDataSetTableAdapters.RegistriAllTableAdapter();
+            this.registriAllGridControl = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colbook_name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colauthor = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colprice = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colgenrename = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colfirst_name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.collast_name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colcode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colissue_date = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colplan_return_date = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colreturn_date = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.registriAllBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.registryBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.registryDataGridView = new System.Windows.Forms.DataGridView();
-            this.book_idTextBox = new System.Windows.Forms.TextBox();
-            this.reader_idTextBox = new System.Windows.Forms.TextBox();
-            this.issue_dateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.plan_return_dateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.return_dateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bookTableAdapter = new BookLibrary.BookLibraryDataSetTableAdapters.bookTableAdapter();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genreBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.genreTableAdapter = new BookLibrary.BookLibraryDataSetTableAdapters.genreTableAdapter();
-            book_idLabel = new System.Windows.Forms.Label();
-            reader_idLabel = new System.Windows.Forms.Label();
-            issue_dateLabel = new System.Windows.Forms.Label();
-            plan_return_dateLabel = new System.Windows.Forms.Label();
-            return_dateLabel = new System.Windows.Forms.Label();
+            this.registriAllBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookLibraryDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.registryBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.registryBindingNavigator)).BeginInit();
-            this.registryBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.registryDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.genreBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registriAllBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registriAllGridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registriAllBindingNavigator)).BeginInit();
+            this.registriAllBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -105,7 +102,7 @@
             this.помощьToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1218, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1902, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -120,8 +117,9 @@
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.выходToolStripMenuItem.Text = "Выход";
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // отчетыToolStripMenuItem
             // 
@@ -136,19 +134,20 @@
             // задолжникиToolStripMenuItem
             // 
             this.задолжникиToolStripMenuItem.Name = "задолжникиToolStripMenuItem";
-            this.задолжникиToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.задолжникиToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.задолжникиToolStripMenuItem.Text = "Задолжники";
+            this.задолжникиToolStripMenuItem.Click += new System.EventHandler(this.задолжникиToolStripMenuItem_Click);
             // 
             // книгиToolStripMenuItem
             // 
             this.книгиToolStripMenuItem.Name = "книгиToolStripMenuItem";
-            this.книгиToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.книгиToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.книгиToolStripMenuItem.Text = "Книги";
             // 
             // читателиToolStripMenuItem
             // 
             this.читателиToolStripMenuItem.Name = "читателиToolStripMenuItem";
-            this.читателиToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.читателиToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.читателиToolStripMenuItem.Text = "Читатели";
             // 
             // справочникиToolStripMenuItem
@@ -160,6 +159,27 @@
             this.справочникиToolStripMenuItem.Name = "справочникиToolStripMenuItem";
             this.справочникиToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
             this.справочникиToolStripMenuItem.Text = "Справочники";
+            // 
+            // читателиToolStripMenuItem1
+            // 
+            this.читателиToolStripMenuItem1.Name = "читателиToolStripMenuItem1";
+            this.читателиToolStripMenuItem1.Size = new System.Drawing.Size(170, 26);
+            this.читателиToolStripMenuItem1.Text = "Читатели";
+            this.читателиToolStripMenuItem1.Click += new System.EventHandler(this.читателиToolStripMenuItem1_Click);
+            // 
+            // книгиToolStripMenuItem1
+            // 
+            this.книгиToolStripMenuItem1.Name = "книгиToolStripMenuItem1";
+            this.книгиToolStripMenuItem1.Size = new System.Drawing.Size(170, 26);
+            this.книгиToolStripMenuItem1.Text = "Книги";
+            this.книгиToolStripMenuItem1.Click += new System.EventHandler(this.книгиToolStripMenuItem1_Click);
+            // 
+            // книгиИнфоToolStripMenuItem
+            // 
+            this.книгиИнфоToolStripMenuItem.Name = "книгиИнфоToolStripMenuItem";
+            this.книгиИнфоToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
+            this.книгиИнфоToolStripMenuItem.Text = "Книги инфо.";
+            this.книгиИнфоToolStripMenuItem.Click += new System.EventHandler(this.книгиИнфоToolStripMenuItem_Click);
             // 
             // помощьToolStripMenuItem
             // 
@@ -174,32 +194,14 @@
             // оПрограммеToolStripMenuItem
             // 
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
             // 
             // справкаToolStripMenuItem
             // 
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
-            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.справкаToolStripMenuItem.Text = "Справка";
-            // 
-            // читателиToolStripMenuItem1
-            // 
-            this.читателиToolStripMenuItem1.Name = "читателиToolStripMenuItem1";
-            this.читателиToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
-            this.читателиToolStripMenuItem1.Text = "Читатели";
-            // 
-            // книгиToolStripMenuItem1
-            // 
-            this.книгиToolStripMenuItem1.Name = "книгиToolStripMenuItem1";
-            this.книгиToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
-            this.книгиToolStripMenuItem1.Text = "Книги";
-            // 
-            // книгиИнфоToolStripMenuItem
-            // 
-            this.книгиИнфоToolStripMenuItem.Name = "книгиИнфоToolStripMenuItem";
-            this.книгиИнфоToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.книгиИнфоToolStripMenuItem.Text = "Книги инфо.";
             // 
             // bookLibraryDataSet
             // 
@@ -227,14 +229,269 @@
             this.tableAdapterManager.UpdateOrder = BookLibrary.BookLibraryDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UserTableAdapter = null;
             // 
-            // registryBindingNavigator
+            // bookTableAdapter
             // 
-            this.registryBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.registryBindingNavigator.BindingSource = this.registryBindingSource;
-            this.registryBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.registryBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.registryBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.registryBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bookTableAdapter.ClearBeforeFill = true;
+            // 
+            // genreTableAdapter
+            // 
+            this.genreTableAdapter.ClearBeforeFill = true;
+            // 
+            // genreBindingSource
+            // 
+            this.genreBindingSource.DataMember = "genre";
+            this.genreBindingSource.DataSource = this.bookLibraryDataSet;
+            // 
+            // registriAllBindingSource
+            // 
+            this.registriAllBindingSource.DataMember = "RegistriAll";
+            this.registriAllBindingSource.DataSource = this.bookLibraryDataSet;
+            // 
+            // registriAllTableAdapter
+            // 
+            this.registriAllTableAdapter.ClearBeforeFill = true;
+            // 
+            // registriAllGridControl
+            // 
+            this.registriAllGridControl.DataSource = this.registriAllBindingSource;
+            this.registriAllGridControl.Location = new System.Drawing.Point(0, 58);
+            this.registriAllGridControl.MainView = this.gridView1;
+            this.registriAllGridControl.Name = "registriAllGridControl";
+            this.registriAllGridControl.Size = new System.Drawing.Size(1902, 450);
+            this.registriAllGridControl.TabIndex = 1;
+            this.registriAllGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            this.registriAllGridControl.Click += new System.EventHandler(this.registriAllGridControl_Click);
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colbook_name,
+            this.colauthor,
+            this.colprice,
+            this.colgenrename,
+            this.colfirst_name,
+            this.collast_name,
+            this.colcode,
+            this.colissue_date,
+            this.colplan_return_date,
+            this.colreturn_date});
+            this.gridView1.GridControl = this.registriAllGridControl;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // colbook_name
+            // 
+            this.colbook_name.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.colbook_name.AppearanceCell.BackColor2 = System.Drawing.Color.White;
+            this.colbook_name.AppearanceCell.BorderColor = System.Drawing.Color.White;
+            this.colbook_name.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colbook_name.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.colbook_name.AppearanceCell.Options.UseBackColor = true;
+            this.colbook_name.AppearanceCell.Options.UseBorderColor = true;
+            this.colbook_name.AppearanceCell.Options.UseFont = true;
+            this.colbook_name.AppearanceCell.Options.UseForeColor = true;
+            this.colbook_name.AppearanceHeader.BackColor = System.Drawing.Color.White;
+            this.colbook_name.AppearanceHeader.BackColor2 = System.Drawing.Color.White;
+            this.colbook_name.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colbook_name.AppearanceHeader.Options.UseBackColor = true;
+            this.colbook_name.AppearanceHeader.Options.UseFont = true;
+            this.colbook_name.Caption = "Название книги";
+            this.colbook_name.FieldName = "book_name";
+            this.colbook_name.MinWidth = 30;
+            this.colbook_name.Name = "colbook_name";
+            this.colbook_name.Visible = true;
+            this.colbook_name.VisibleIndex = 0;
+            this.colbook_name.Width = 200;
+            // 
+            // colauthor
+            // 
+            this.colauthor.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.colauthor.AppearanceCell.BackColor2 = System.Drawing.Color.White;
+            this.colauthor.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colauthor.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.colauthor.AppearanceCell.Options.UseBackColor = true;
+            this.colauthor.AppearanceCell.Options.UseFont = true;
+            this.colauthor.AppearanceCell.Options.UseForeColor = true;
+            this.colauthor.AppearanceHeader.BackColor = System.Drawing.Color.White;
+            this.colauthor.AppearanceHeader.BackColor2 = System.Drawing.Color.White;
+            this.colauthor.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colauthor.AppearanceHeader.Options.UseBackColor = true;
+            this.colauthor.AppearanceHeader.Options.UseFont = true;
+            this.colauthor.Caption = "Автор";
+            this.colauthor.FieldName = "author";
+            this.colauthor.MinWidth = 30;
+            this.colauthor.Name = "colauthor";
+            this.colauthor.Visible = true;
+            this.colauthor.VisibleIndex = 1;
+            this.colauthor.Width = 200;
+            // 
+            // colprice
+            // 
+            this.colprice.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.colprice.AppearanceCell.BackColor2 = System.Drawing.Color.White;
+            this.colprice.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colprice.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.colprice.AppearanceCell.Options.UseBackColor = true;
+            this.colprice.AppearanceCell.Options.UseFont = true;
+            this.colprice.AppearanceCell.Options.UseForeColor = true;
+            this.colprice.AppearanceHeader.BackColor = System.Drawing.Color.White;
+            this.colprice.AppearanceHeader.BackColor2 = System.Drawing.Color.White;
+            this.colprice.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colprice.AppearanceHeader.Options.UseBackColor = true;
+            this.colprice.AppearanceHeader.Options.UseFont = true;
+            this.colprice.Caption = "Цена";
+            this.colprice.FieldName = "price";
+            this.colprice.MinWidth = 30;
+            this.colprice.Name = "colprice";
+            this.colprice.Visible = true;
+            this.colprice.VisibleIndex = 2;
+            this.colprice.Width = 100;
+            // 
+            // colgenrename
+            // 
+            this.colgenrename.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.colgenrename.AppearanceCell.BackColor2 = System.Drawing.Color.White;
+            this.colgenrename.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colgenrename.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.colgenrename.AppearanceCell.Options.UseBackColor = true;
+            this.colgenrename.AppearanceCell.Options.UseFont = true;
+            this.colgenrename.AppearanceCell.Options.UseForeColor = true;
+            this.colgenrename.AppearanceHeader.BackColor = System.Drawing.Color.White;
+            this.colgenrename.AppearanceHeader.BackColor2 = System.Drawing.Color.White;
+            this.colgenrename.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colgenrename.AppearanceHeader.Options.UseBackColor = true;
+            this.colgenrename.AppearanceHeader.Options.UseFont = true;
+            this.colgenrename.Caption = "Жанр";
+            this.colgenrename.FieldName = "genrename";
+            this.colgenrename.MinWidth = 30;
+            this.colgenrename.Name = "colgenrename";
+            this.colgenrename.Visible = true;
+            this.colgenrename.VisibleIndex = 3;
+            this.colgenrename.Width = 200;
+            // 
+            // colfirst_name
+            // 
+            this.colfirst_name.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.colfirst_name.AppearanceCell.BackColor2 = System.Drawing.Color.White;
+            this.colfirst_name.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colfirst_name.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.colfirst_name.AppearanceCell.Options.UseBackColor = true;
+            this.colfirst_name.AppearanceCell.Options.UseFont = true;
+            this.colfirst_name.AppearanceCell.Options.UseForeColor = true;
+            this.colfirst_name.AppearanceHeader.BackColor = System.Drawing.Color.White;
+            this.colfirst_name.AppearanceHeader.BackColor2 = System.Drawing.Color.White;
+            this.colfirst_name.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colfirst_name.AppearanceHeader.Options.UseBackColor = true;
+            this.colfirst_name.AppearanceHeader.Options.UseFont = true;
+            this.colfirst_name.Caption = "Имя читателя";
+            this.colfirst_name.FieldName = "first_name";
+            this.colfirst_name.MinWidth = 30;
+            this.colfirst_name.Name = "colfirst_name";
+            this.colfirst_name.Visible = true;
+            this.colfirst_name.VisibleIndex = 4;
+            this.colfirst_name.Width = 200;
+            // 
+            // collast_name
+            // 
+            this.collast_name.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.collast_name.AppearanceCell.BackColor2 = System.Drawing.Color.White;
+            this.collast_name.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.collast_name.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.collast_name.AppearanceCell.Options.UseBackColor = true;
+            this.collast_name.AppearanceCell.Options.UseFont = true;
+            this.collast_name.AppearanceCell.Options.UseForeColor = true;
+            this.collast_name.AppearanceHeader.BackColor = System.Drawing.Color.White;
+            this.collast_name.AppearanceHeader.BackColor2 = System.Drawing.Color.White;
+            this.collast_name.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.collast_name.AppearanceHeader.Options.UseBackColor = true;
+            this.collast_name.AppearanceHeader.Options.UseFont = true;
+            this.collast_name.Caption = "Фамилия читателя";
+            this.collast_name.FieldName = "last_name";
+            this.collast_name.MinWidth = 30;
+            this.collast_name.Name = "collast_name";
+            this.collast_name.Visible = true;
+            this.collast_name.VisibleIndex = 5;
+            this.collast_name.Width = 200;
+            // 
+            // colcode
+            // 
+            this.colcode.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.colcode.AppearanceCell.BackColor2 = System.Drawing.Color.White;
+            this.colcode.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colcode.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.colcode.AppearanceCell.Options.UseBackColor = true;
+            this.colcode.AppearanceCell.Options.UseFont = true;
+            this.colcode.AppearanceCell.Options.UseForeColor = true;
+            this.colcode.AppearanceHeader.BackColor = System.Drawing.Color.White;
+            this.colcode.AppearanceHeader.BackColor2 = System.Drawing.Color.White;
+            this.colcode.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colcode.AppearanceHeader.Options.UseBackColor = true;
+            this.colcode.AppearanceHeader.Options.UseFont = true;
+            this.colcode.Caption = "Код читателя";
+            this.colcode.FieldName = "code";
+            this.colcode.MinWidth = 30;
+            this.colcode.Name = "colcode";
+            this.colcode.Visible = true;
+            this.colcode.VisibleIndex = 6;
+            this.colcode.Width = 130;
+            // 
+            // colissue_date
+            // 
+            this.colissue_date.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.colissue_date.AppearanceCell.BackColor2 = System.Drawing.Color.White;
+            this.colissue_date.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colissue_date.AppearanceCell.Options.UseBackColor = true;
+            this.colissue_date.AppearanceCell.Options.UseFont = true;
+            this.colissue_date.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colissue_date.AppearanceHeader.Options.UseFont = true;
+            this.colissue_date.Caption = "Дата выдачи";
+            this.colissue_date.FieldName = "issue_date";
+            this.colissue_date.Name = "colissue_date";
+            this.colissue_date.Visible = true;
+            this.colissue_date.VisibleIndex = 7;
+            this.colissue_date.Width = 150;
+            // 
+            // colplan_return_date
+            // 
+            this.colplan_return_date.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.colplan_return_date.AppearanceCell.BackColor2 = System.Drawing.Color.White;
+            this.colplan_return_date.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colplan_return_date.AppearanceCell.Options.UseBackColor = true;
+            this.colplan_return_date.AppearanceCell.Options.UseFont = true;
+            this.colplan_return_date.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colplan_return_date.AppearanceHeader.Options.UseFont = true;
+            this.colplan_return_date.Caption = "Дата возврата Пл.";
+            this.colplan_return_date.FieldName = "plan_return_date";
+            this.colplan_return_date.Name = "colplan_return_date";
+            this.colplan_return_date.Visible = true;
+            this.colplan_return_date.VisibleIndex = 8;
+            this.colplan_return_date.Width = 160;
+            // 
+            // colreturn_date
+            // 
+            this.colreturn_date.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.colreturn_date.AppearanceCell.BackColor2 = System.Drawing.Color.White;
+            this.colreturn_date.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colreturn_date.AppearanceCell.Options.UseBackColor = true;
+            this.colreturn_date.AppearanceCell.Options.UseFont = true;
+            this.colreturn_date.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colreturn_date.AppearanceHeader.Options.UseFont = true;
+            this.colreturn_date.Caption = "Дата возврата";
+            this.colreturn_date.FieldName = "return_date";
+            this.colreturn_date.Name = "colreturn_date";
+            this.colreturn_date.Visible = true;
+            this.colreturn_date.VisibleIndex = 9;
+            this.colreturn_date.Width = 120;
+            // 
+            // registriAllBindingNavigator
+            // 
+            this.registriAllBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.registriAllBindingNavigator.BindingSource = this.registriAllBindingSource;
+            this.registriAllBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.registriAllBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.registriAllBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.registriAllBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -246,17 +503,43 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.registryBindingNavigatorSaveItem});
-            this.registryBindingNavigator.Location = new System.Drawing.Point(0, 28);
-            this.registryBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.registryBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.registryBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.registryBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.registryBindingNavigator.Name = "registryBindingNavigator";
-            this.registryBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.registryBindingNavigator.Size = new System.Drawing.Size(1218, 27);
-            this.registryBindingNavigator.TabIndex = 1;
-            this.registryBindingNavigator.Text = "bindingNavigator1";
+            this.registriAllBindingNavigatorSaveItem,
+            this.toolStripButton1});
+            this.registriAllBindingNavigator.Location = new System.Drawing.Point(0, 28);
+            this.registriAllBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.registriAllBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.registriAllBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.registriAllBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.registriAllBindingNavigator.Name = "registriAllBindingNavigator";
+            this.registriAllBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.registriAllBindingNavigator.Size = new System.Drawing.Size(1902, 27);
+            this.registriAllBindingNavigator.TabIndex = 3;
+            this.registriAllBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 24);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -290,16 +573,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 24);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
@@ -322,221 +598,57 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
-            // bindingNavigatorAddNewItem
+            // registriAllBindingNavigatorSaveItem
             // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            this.registriAllBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.registriAllBindingNavigatorSaveItem.Enabled = false;
+            this.registriAllBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("registriAllBindingNavigatorSaveItem.Image")));
+            this.registriAllBindingNavigatorSaveItem.Name = "registriAllBindingNavigatorSaveItem";
+            this.registriAllBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
+            this.registriAllBindingNavigatorSaveItem.Text = "Сохранить данные";
             // 
-            // bindingNavigatorDeleteItem
+            // toolStripButton1
             // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
-            // 
-            // registryBindingNavigatorSaveItem
-            // 
-            this.registryBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.registryBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("registryBindingNavigatorSaveItem.Image")));
-            this.registryBindingNavigatorSaveItem.Name = "registryBindingNavigatorSaveItem";
-            this.registryBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
-            this.registryBindingNavigatorSaveItem.Text = "Сохранить данные";
-            this.registryBindingNavigatorSaveItem.Click += new System.EventHandler(this.registryBindingNavigatorSaveItem_Click);
-            // 
-            // registryDataGridView
-            // 
-            this.registryDataGridView.AutoGenerateColumns = false;
-            this.registryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.registryDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.registryDataGridView.DataSource = this.registryBindingSource;
-            this.registryDataGridView.Location = new System.Drawing.Point(0, 68);
-            this.registryDataGridView.Name = "registryDataGridView";
-            this.registryDataGridView.RowTemplate.Height = 24;
-            this.registryDataGridView.Size = new System.Drawing.Size(759, 492);
-            this.registryDataGridView.TabIndex = 2;
-            this.registryDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registryDataGridView_CellContentClick);
-            // 
-            // book_idLabel
-            // 
-            book_idLabel.AutoSize = true;
-            book_idLabel.Location = new System.Drawing.Point(776, 68);
-            book_idLabel.Name = "book_idLabel";
-            book_idLabel.Size = new System.Drawing.Size(58, 17);
-            book_idLabel.TabIndex = 5;
-            book_idLabel.Text = "book id:";
-            // 
-            // book_idTextBox
-            // 
-            this.book_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.registryBindingSource, "book_id", true));
-            this.book_idTextBox.Location = new System.Drawing.Point(895, 65);
-            this.book_idTextBox.Name = "book_idTextBox";
-            this.book_idTextBox.Size = new System.Drawing.Size(200, 22);
-            this.book_idTextBox.TabIndex = 6;
-            // 
-            // reader_idLabel
-            // 
-            reader_idLabel.AutoSize = true;
-            reader_idLabel.Location = new System.Drawing.Point(776, 96);
-            reader_idLabel.Name = "reader_idLabel";
-            reader_idLabel.Size = new System.Drawing.Size(69, 17);
-            reader_idLabel.TabIndex = 7;
-            reader_idLabel.Text = "reader id:";
-            // 
-            // reader_idTextBox
-            // 
-            this.reader_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.registryBindingSource, "reader_id", true));
-            this.reader_idTextBox.Location = new System.Drawing.Point(895, 93);
-            this.reader_idTextBox.Name = "reader_idTextBox";
-            this.reader_idTextBox.Size = new System.Drawing.Size(200, 22);
-            this.reader_idTextBox.TabIndex = 8;
-            // 
-            // issue_dateLabel
-            // 
-            issue_dateLabel.AutoSize = true;
-            issue_dateLabel.Location = new System.Drawing.Point(776, 125);
-            issue_dateLabel.Name = "issue_dateLabel";
-            issue_dateLabel.Size = new System.Drawing.Size(77, 17);
-            issue_dateLabel.TabIndex = 9;
-            issue_dateLabel.Text = "issue date:";
-            // 
-            // issue_dateDateTimePicker
-            // 
-            this.issue_dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.registryBindingSource, "issue_date", true));
-            this.issue_dateDateTimePicker.Location = new System.Drawing.Point(895, 121);
-            this.issue_dateDateTimePicker.Name = "issue_dateDateTimePicker";
-            this.issue_dateDateTimePicker.Size = new System.Drawing.Size(200, 22);
-            this.issue_dateDateTimePicker.TabIndex = 10;
-            // 
-            // plan_return_dateLabel
-            // 
-            plan_return_dateLabel.AutoSize = true;
-            plan_return_dateLabel.Location = new System.Drawing.Point(776, 153);
-            plan_return_dateLabel.Name = "plan_return_dateLabel";
-            plan_return_dateLabel.Size = new System.Drawing.Size(113, 17);
-            plan_return_dateLabel.TabIndex = 11;
-            plan_return_dateLabel.Text = "plan return date:";
-            // 
-            // plan_return_dateDateTimePicker
-            // 
-            this.plan_return_dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.registryBindingSource, "plan_return_date", true));
-            this.plan_return_dateDateTimePicker.Location = new System.Drawing.Point(895, 149);
-            this.plan_return_dateDateTimePicker.Name = "plan_return_dateDateTimePicker";
-            this.plan_return_dateDateTimePicker.Size = new System.Drawing.Size(200, 22);
-            this.plan_return_dateDateTimePicker.TabIndex = 12;
-            // 
-            // return_dateLabel
-            // 
-            return_dateLabel.AutoSize = true;
-            return_dateLabel.Location = new System.Drawing.Point(776, 181);
-            return_dateLabel.Name = "return_dateLabel";
-            return_dateLabel.Size = new System.Drawing.Size(82, 17);
-            return_dateLabel.TabIndex = 13;
-            return_dateLabel.Text = "return date:";
-            // 
-            // return_dateDateTimePicker
-            // 
-            this.return_dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.registryBindingSource, "return_date", true));
-            this.return_dateDateTimePicker.Location = new System.Drawing.Point(895, 177);
-            this.return_dateDateTimePicker.Name = "return_dateDateTimePicker";
-            this.return_dateDateTimePicker.Size = new System.Drawing.Size(200, 22);
-            this.return_dateDateTimePicker.TabIndex = 14;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // bookTableAdapter
-            // 
-            this.bookTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "return_date";
-            this.dataGridViewTextBoxColumn6.HeaderText = "return_date";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "plan_return_date";
-            this.dataGridViewTextBoxColumn5.HeaderText = "plan_return_date";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "issue_date";
-            this.dataGridViewTextBoxColumn4.HeaderText = "issue_date";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "reader_id";
-            this.dataGridViewTextBoxColumn3.HeaderText = "reader_id";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "book_id";
-            this.dataGridViewTextBoxColumn2.HeaderText = "book_id";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // genreBindingSource
-            // 
-            this.genreBindingSource.DataMember = "genre";
-            this.genreBindingSource.DataSource = this.bookLibraryDataSet;
-            // 
-            // genreTableAdapter
-            // 
-            this.genreTableAdapter.ClearBeforeFill = true;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // registerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1218, 604);
-            this.Controls.Add(book_idLabel);
-            this.Controls.Add(this.book_idTextBox);
-            this.Controls.Add(reader_idLabel);
-            this.Controls.Add(this.reader_idTextBox);
-            this.Controls.Add(issue_dateLabel);
-            this.Controls.Add(this.issue_dateDateTimePicker);
-            this.Controls.Add(plan_return_dateLabel);
-            this.Controls.Add(this.plan_return_dateDateTimePicker);
-            this.Controls.Add(return_dateLabel);
-            this.Controls.Add(this.return_dateDateTimePicker);
-            this.Controls.Add(this.registryDataGridView);
-            this.Controls.Add(this.registryBindingNavigator);
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1902, 515);
+            this.ControlBox = false;
+            this.Controls.Add(this.registriAllBindingNavigator);
+            this.Controls.Add(this.registriAllGridControl);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "registerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Библиотека";
             this.Load += new System.EventHandler(this.registerForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookLibraryDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.registryBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.registryBindingNavigator)).EndInit();
-            this.registryBindingNavigator.ResumeLayout(false);
-            this.registryBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.registryDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.genreBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registriAllBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registriAllGridControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registriAllBindingNavigator)).EndInit();
+            this.registriAllBindingNavigator.ResumeLayout(false);
+            this.registriAllBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -562,7 +674,21 @@
         private System.Windows.Forms.BindingSource registryBindingSource;
         private BookLibraryDataSetTableAdapters.registryTableAdapter registryTableAdapter;
         private BookLibraryDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator registryBindingNavigator;
+        private BookLibraryDataSetTableAdapters.bookTableAdapter bookTableAdapter;
+        private BookLibraryDataSetTableAdapters.genreTableAdapter genreTableAdapter;
+        private System.Windows.Forms.BindingSource genreBindingSource;
+        private System.Windows.Forms.BindingSource registriAllBindingSource;
+        private BookLibraryDataSetTableAdapters.RegistriAllTableAdapter registriAllTableAdapter;
+        private DevExpress.XtraGrid.GridControl registriAllGridControl;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn colbook_name;
+        private DevExpress.XtraGrid.Columns.GridColumn colauthor;
+        private DevExpress.XtraGrid.Columns.GridColumn colprice;
+        private DevExpress.XtraGrid.Columns.GridColumn colgenrename;
+        private DevExpress.XtraGrid.Columns.GridColumn colfirst_name;
+        private DevExpress.XtraGrid.Columns.GridColumn collast_name;
+        private DevExpress.XtraGrid.Columns.GridColumn colcode;
+        private System.Windows.Forms.BindingNavigator registriAllBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -574,21 +700,11 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton registryBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView registryDataGridView;
-        private System.Windows.Forms.TextBox book_idTextBox;
-        private System.Windows.Forms.TextBox reader_idTextBox;
-        private System.Windows.Forms.DateTimePicker issue_dateDateTimePicker;
-        private System.Windows.Forms.DateTimePicker plan_return_dateDateTimePicker;
-        private System.Windows.Forms.DateTimePicker return_dateDateTimePicker;
-        private BookLibraryDataSetTableAdapters.bookTableAdapter bookTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private BookLibraryDataSetTableAdapters.genreTableAdapter genreTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.BindingSource genreBindingSource;
+        private System.Windows.Forms.ToolStripButton registriAllBindingNavigatorSaveItem;
+        private DevExpress.XtraGrid.Columns.GridColumn colissue_date;
+        private DevExpress.XtraGrid.Columns.GridColumn colplan_return_date;
+        private DevExpress.XtraGrid.Columns.GridColumn colreturn_date;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

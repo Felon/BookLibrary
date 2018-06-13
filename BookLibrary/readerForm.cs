@@ -31,5 +31,10 @@ namespace BookLibrary
             this.readerTableAdapter.Fill(this.bookLibraryDataSet.reader);
 
         }
+
+        private void readerGridControl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

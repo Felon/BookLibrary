@@ -1,6 +1,6 @@
 ﻿namespace BookLibrary
 {
-    partial class readerForm
+    partial class debtorsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(readerForm));
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(debtorsForm));
             this.bookLibraryDataSet = new BookLibrary.BookLibraryDataSet();
-            this.readerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.readerTableAdapter = new BookLibrary.BookLibraryDataSetTableAdapters.readerTableAdapter();
+            this.debtorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.debtorsTableAdapter = new BookLibrary.BookLibraryDataSetTableAdapters.debtorsTableAdapter();
             this.tableAdapterManager = new BookLibrary.BookLibraryDataSetTableAdapters.TableAdapterManager();
-            this.readerBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.debtorsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -47,22 +44,26 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.readerBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.readerGridControl = new DevExpress.XtraGrid.GridControl();
+            this.debtorsGridControl = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colbook_name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colauthor = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colcode = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colfirst_name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.collast_name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colmiddle_name = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colmobile_phone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colplan_return_date = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colregistration_address = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colresidential_address = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colmobile_phone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.bookLibraryDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.readerBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.readerBindingNavigator)).BeginInit();
-            this.readerBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.readerGridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.debtorsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.debtorsBindingNavigator)).BeginInit();
+            this.debtorsBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.debtorsGridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // bookLibraryDataSet
@@ -70,34 +71,35 @@
             this.bookLibraryDataSet.DataSetName = "BookLibraryDataSet";
             this.bookLibraryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // readerBindingSource
+            // debtorsBindingSource
             // 
-            this.readerBindingSource.DataMember = "reader";
-            this.readerBindingSource.DataSource = this.bookLibraryDataSet;
+            this.debtorsBindingSource.DataMember = "debtors";
+            this.debtorsBindingSource.DataSource = this.bookLibraryDataSet;
             // 
-            // readerTableAdapter
+            // debtorsTableAdapter
             // 
-            this.readerTableAdapter.ClearBeforeFill = true;
+            this.debtorsTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.bookinfoTableAdapter = null;
             this.tableAdapterManager.bookTableAdapter = null;
+            this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.genreTableAdapter = null;
-            this.tableAdapterManager.readerTableAdapter = this.readerTableAdapter;
+            this.tableAdapterManager.readerTableAdapter = null;
             this.tableAdapterManager.registryTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = BookLibrary.BookLibraryDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UserTableAdapter = null;
             // 
-            // readerBindingNavigator
+            // debtorsBindingNavigator
             // 
-            this.readerBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.readerBindingNavigator.BindingSource = this.readerBindingSource;
-            this.readerBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.readerBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.readerBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.readerBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.debtorsBindingNavigator.AddNewItem = null;
+            this.debtorsBindingNavigator.BindingSource = this.debtorsBindingSource;
+            this.debtorsBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.debtorsBindingNavigator.DeleteItem = null;
+            this.debtorsBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.debtorsBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -107,28 +109,17 @@
             this.bindingNavigatorMoveNextItem,
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.readerBindingNavigatorSaveItem});
-            this.readerBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.readerBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.readerBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.readerBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.readerBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.readerBindingNavigator.Name = "readerBindingNavigator";
-            this.readerBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.readerBindingNavigator.Size = new System.Drawing.Size(1253, 27);
-            this.readerBindingNavigator.TabIndex = 0;
-            this.readerBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            this.toolStripButton1});
+            this.debtorsBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.debtorsBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.debtorsBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.debtorsBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.debtorsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.debtorsBindingNavigator.Name = "debtorsBindingNavigator";
+            this.debtorsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.debtorsBindingNavigator.Size = new System.Drawing.Size(1271, 27);
+            this.debtorsBindingNavigator.TabIndex = 0;
+            this.debtorsBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorCountItem
             // 
@@ -136,15 +127,6 @@
             this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 24);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -174,7 +156,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
@@ -206,121 +188,159 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
-            // readerBindingNavigatorSaveItem
+            // debtorsGridControl
             // 
-            this.readerBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.readerBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("readerBindingNavigatorSaveItem.Image")));
-            this.readerBindingNavigatorSaveItem.Name = "readerBindingNavigatorSaveItem";
-            this.readerBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
-            this.readerBindingNavigatorSaveItem.Text = "Сохранить данные";
-            this.readerBindingNavigatorSaveItem.Click += new System.EventHandler(this.readerBindingNavigatorSaveItem_Click);
-            // 
-            // readerGridControl
-            // 
-            this.readerGridControl.DataSource = this.readerBindingSource;
-            gridLevelNode1.RelationName = "Level1";
-            this.readerGridControl.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
-            this.readerGridControl.Location = new System.Drawing.Point(0, 30);
-            this.readerGridControl.MainView = this.gridView1;
-            this.readerGridControl.Name = "readerGridControl";
-            this.readerGridControl.Size = new System.Drawing.Size(1244, 220);
-            this.readerGridControl.TabIndex = 1;
-            this.readerGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.debtorsGridControl.DataSource = this.debtorsBindingSource;
+            this.debtorsGridControl.Location = new System.Drawing.Point(0, 42);
+            this.debtorsGridControl.MainView = this.gridView1;
+            this.debtorsGridControl.Name = "debtorsGridControl";
+            this.debtorsGridControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemTextEdit1});
+            this.debtorsGridControl.Size = new System.Drawing.Size(1271, 311);
+            this.debtorsGridControl.TabIndex = 1;
+            this.debtorsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            this.readerGridControl.Click += new System.EventHandler(this.readerGridControl_Click);
             // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colbook_name,
+            this.colauthor,
             this.colcode,
             this.colfirst_name,
             this.collast_name,
             this.colmiddle_name,
-            this.colmobile_phone,
+            this.colplan_return_date,
             this.colregistration_address,
-            this.colresidential_address});
-            this.gridView1.GridControl = this.readerGridControl;
+            this.colmobile_phone});
+            this.gridView1.GridControl = this.debtorsGridControl;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsPrint.PrintSelectedRowsOnly = true;
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // colbook_name
+            // 
+            this.colbook_name.Caption = "Название книги";
+            this.colbook_name.FieldName = "book_name";
+            this.colbook_name.Name = "colbook_name";
+            this.colbook_name.OptionsColumn.Printable = DevExpress.Utils.DefaultBoolean.True;
+            this.colbook_name.OptionsColumn.ReadOnly = true;
+            this.colbook_name.Visible = true;
+            this.colbook_name.VisibleIndex = 0;
+            // 
+            // colauthor
+            // 
+            this.colauthor.Caption = "Автор";
+            this.colauthor.FieldName = "author";
+            this.colauthor.Name = "colauthor";
+            this.colauthor.OptionsColumn.Printable = DevExpress.Utils.DefaultBoolean.True;
+            this.colauthor.OptionsColumn.ReadOnly = true;
+            this.colauthor.Visible = true;
+            this.colauthor.VisibleIndex = 1;
             // 
             // colcode
             // 
-            this.colcode.Caption = "Код читателя";
+            this.colcode.Caption = "Код";
             this.colcode.FieldName = "code";
             this.colcode.Name = "colcode";
+            this.colcode.OptionsColumn.Printable = DevExpress.Utils.DefaultBoolean.True;
+            this.colcode.OptionsColumn.ReadOnly = true;
             this.colcode.Visible = true;
-            this.colcode.VisibleIndex = 0;
+            this.colcode.VisibleIndex = 2;
             // 
             // colfirst_name
             // 
             this.colfirst_name.Caption = "Имя";
             this.colfirst_name.FieldName = "first_name";
             this.colfirst_name.Name = "colfirst_name";
+            this.colfirst_name.OptionsColumn.Printable = DevExpress.Utils.DefaultBoolean.True;
+            this.colfirst_name.OptionsColumn.ReadOnly = true;
             this.colfirst_name.Visible = true;
-            this.colfirst_name.VisibleIndex = 1;
+            this.colfirst_name.VisibleIndex = 3;
             // 
             // collast_name
             // 
             this.collast_name.Caption = "Фамилия";
             this.collast_name.FieldName = "last_name";
             this.collast_name.Name = "collast_name";
+            this.collast_name.OptionsColumn.Printable = DevExpress.Utils.DefaultBoolean.True;
+            this.collast_name.OptionsColumn.ReadOnly = true;
             this.collast_name.Visible = true;
-            this.collast_name.VisibleIndex = 2;
+            this.collast_name.VisibleIndex = 4;
             // 
             // colmiddle_name
             // 
             this.colmiddle_name.Caption = "Отчество";
             this.colmiddle_name.FieldName = "middle_name";
             this.colmiddle_name.Name = "colmiddle_name";
+            this.colmiddle_name.OptionsColumn.Printable = DevExpress.Utils.DefaultBoolean.True;
+            this.colmiddle_name.OptionsColumn.ReadOnly = true;
             this.colmiddle_name.Visible = true;
-            this.colmiddle_name.VisibleIndex = 3;
+            this.colmiddle_name.VisibleIndex = 5;
             // 
-            // colmobile_phone
+            // colplan_return_date
             // 
-            this.colmobile_phone.Caption = "Мобильный";
-            this.colmobile_phone.FieldName = "mobile_phone";
-            this.colmobile_phone.Name = "colmobile_phone";
-            this.colmobile_phone.Visible = true;
-            this.colmobile_phone.VisibleIndex = 4;
+            this.colplan_return_date.Caption = "план. Дата возврата";
+            this.colplan_return_date.FieldName = "plan_return_date";
+            this.colplan_return_date.Name = "colplan_return_date";
+            this.colplan_return_date.OptionsColumn.Printable = DevExpress.Utils.DefaultBoolean.True;
+            this.colplan_return_date.OptionsColumn.ReadOnly = true;
+            this.colplan_return_date.Visible = true;
+            this.colplan_return_date.VisibleIndex = 6;
             // 
             // colregistration_address
             // 
-            this.colregistration_address.Caption = "Адресс регистрации";
+            this.colregistration_address.Caption = "Адрес регистрации";
             this.colregistration_address.FieldName = "registration_address";
             this.colregistration_address.Name = "colregistration_address";
+            this.colregistration_address.OptionsColumn.Printable = DevExpress.Utils.DefaultBoolean.True;
+            this.colregistration_address.OptionsColumn.ReadOnly = true;
             this.colregistration_address.Visible = true;
-            this.colregistration_address.VisibleIndex = 5;
+            this.colregistration_address.VisibleIndex = 7;
             // 
-            // colresidential_address
+            // colmobile_phone
             // 
-            this.colresidential_address.Caption = "Адрес проживания";
-            this.colresidential_address.FieldName = "residential_address";
-            this.colresidential_address.Name = "colresidential_address";
-            this.colresidential_address.Visible = true;
-            this.colresidential_address.VisibleIndex = 6;
+            this.colmobile_phone.Caption = "Мобильный телефон";
+            this.colmobile_phone.FieldName = "mobile_phone";
+            this.colmobile_phone.Name = "colmobile_phone";
+            this.colmobile_phone.OptionsColumn.Printable = DevExpress.Utils.DefaultBoolean.True;
+            this.colmobile_phone.OptionsColumn.ReadOnly = true;
+            this.colmobile_phone.Visible = true;
+            this.colmobile_phone.VisibleIndex = 8;
             // 
-            // readerForm
+            // repositoryItemTextEdit1
+            // 
+            this.repositoryItemTextEdit1.AutoHeight = false;
+            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // debtorsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1253, 259);
-            this.Controls.Add(this.readerGridControl);
-            this.Controls.Add(this.readerBindingNavigator);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "readerForm";
-            this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Информация о читателях";
-            this.Load += new System.EventHandler(this.readerForm_Load);
+            this.ClientSize = new System.Drawing.Size(1271, 354);
+            this.Controls.Add(this.debtorsGridControl);
+            this.Controls.Add(this.debtorsBindingNavigator);
+            this.Name = "debtorsForm";
+            this.Text = "Должники книг";
+            this.Load += new System.EventHandler(this.debtorsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bookLibraryDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.readerBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.readerBindingNavigator)).EndInit();
-            this.readerBindingNavigator.ResumeLayout(false);
-            this.readerBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.readerGridControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.debtorsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.debtorsBindingNavigator)).EndInit();
+            this.debtorsBindingNavigator.ResumeLayout(false);
+            this.debtorsBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.debtorsGridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,13 +349,11 @@
         #endregion
 
         private BookLibraryDataSet bookLibraryDataSet;
-        private System.Windows.Forms.BindingSource readerBindingSource;
-        private BookLibraryDataSetTableAdapters.readerTableAdapter readerTableAdapter;
+        private System.Windows.Forms.BindingSource debtorsBindingSource;
+        private BookLibraryDataSetTableAdapters.debtorsTableAdapter debtorsTableAdapter;
         private BookLibraryDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator readerBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.BindingNavigator debtorsBindingNavigator;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
@@ -344,15 +362,18 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton readerBindingNavigatorSaveItem;
-        private DevExpress.XtraGrid.GridControl readerGridControl;
+        private DevExpress.XtraGrid.GridControl debtorsGridControl;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn colbook_name;
+        private DevExpress.XtraGrid.Columns.GridColumn colauthor;
         private DevExpress.XtraGrid.Columns.GridColumn colcode;
         private DevExpress.XtraGrid.Columns.GridColumn colfirst_name;
         private DevExpress.XtraGrid.Columns.GridColumn collast_name;
         private DevExpress.XtraGrid.Columns.GridColumn colmiddle_name;
-        private DevExpress.XtraGrid.Columns.GridColumn colmobile_phone;
+        private DevExpress.XtraGrid.Columns.GridColumn colplan_return_date;
         private DevExpress.XtraGrid.Columns.GridColumn colregistration_address;
-        private DevExpress.XtraGrid.Columns.GridColumn colresidential_address;
+        private DevExpress.XtraGrid.Columns.GridColumn colmobile_phone;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

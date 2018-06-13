@@ -46,6 +46,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,6 +66,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthenticationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthenticationForm.Designer.cs">
+      <DependentUpon>AuthenticationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookLibraryDataSet.cs">
       <DependentUpon>BookLibraryDataSet.xsd</DependentUpon>
     </Compile>
@@ -72,6 +85,18 @@
     </Compile>
     <Compile Include="bookForm.Designer.cs">
       <DependentUpon>bookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="debtorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="debtorsForm.Designer.cs">
+      <DependentUpon>debtorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoBookForm.Designer.cs">
+      <DependentUpon>InfoBookForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,9 +112,19 @@
     <Compile Include="registerForm.Designer.cs">
       <DependentUpon>registerForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AuthenticationForm.resx">
+      <DependentUpon>AuthenticationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bookForm.resx">
       <DependentUpon>bookForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="debtorsForm.resx">
+      <DependentUpon>debtorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoBookForm.resx">
+      <DependentUpon>InfoBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
